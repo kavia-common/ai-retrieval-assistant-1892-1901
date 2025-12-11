@@ -1,0 +1,39 @@
+{
+  "name": "ai-rag-lite",
+  "version": "0.1.0",
+  "description": "A lightweight, dependency-minimal RAG toolkit for Node and browser environments.",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "dev": "vitest"
+  },
+  "keywords": [
+    "rag",
+    "retrieval",
+    "embeddings",
+    "vector",
+    "llm",
+    "ai",
+    "lightweight"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vitest": "^1.6.0"
+  }
+}
